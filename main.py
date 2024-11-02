@@ -2,7 +2,7 @@ from telebot import TeleBot, types
 import json
 # from telebot.states import stateGroup, state
 
-BOT_TOKEN = "6093650930:AAHjesG87iPoPjcEPJk7BLtjfKU09QOKWf0"
+BOT_TOKEN = "7537886534:AAGfjAYOAb_zGOYure0LZlcgeuZxeqb5g-8"
 bot = TeleBot(BOT_TOKEN)
 
 
