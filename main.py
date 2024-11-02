@@ -2,7 +2,7 @@ from telebot import TeleBot, types
 import json
 # from telebot.states import stateGroup, state
 
-BOT_TOKEN = "7537886534:AAGfjAYOAb_zGOYure0LZlcgeuZxeqb5g-8"
+BOT_TOKEN = "7896195332:AAFUTnSjgV576bi61zX5XRq93pn-MY0eNNI"
 bot = TeleBot(BOT_TOKEN)
 
 
@@ -96,7 +96,7 @@ def useradmin(msg):
     with open("data.json","rb") as f:
         data = json.load(f)
 
-    if str(msg.from_user.id) in data["adminlar"] or str(msg.from_user.id) == data["ega"]:
+    if str(msg.from_user.id) in data["adminlar"].keys() or str(msg.from_user.id) == data["ega"]:
         return True
     else:
         return False
@@ -125,7 +125,7 @@ def Nomzodlarbtn():
 #botga start bosilganida bajariladigan amal
 @bot.message_handler(commands=['start','help'])
 def start_message(msg: types.Message):
-
+    bot.send_message(msg.from_user.id,"salom")
     userinfo(msg)
 
     if useradmin(msg):
@@ -303,15 +303,7 @@ def send_photo(msg: types.Message):
             
     
 
-#        Mangitobod Qurbonov Faxriddin
-#        Xalqobod Quvvatov Zarifboy
-#        Dehqonobod Yuldoshev Ravshan
-#        Bunyodkor Abdullayev Sadullo
-#        Sariqtepa Mamatqulov Komil
-#        Gulobod Ahmedov Jasur
-#        Quyi Tegana Xalilov Ilyos
-#        Jozmon Yuldoshev Lutfullo
-#        Kutarma Qosimov Rabbim
+
 
 
 bot.polling(timeout=60)
