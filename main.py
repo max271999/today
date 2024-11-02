@@ -140,103 +140,106 @@ def start_message(msg: types.Message):
 #inline tugmalar bosilganida bajariladigan amallar
 @bot.callback_query_handler(func=lambda x: x.data)
 def query(msg: types.CallbackQuery):
-    with open("data.json","rb") as f:
-        data = json.load(f)
+    try:
+        with open("data.json","rb") as f:
+            data = json.load(f)
+        
+        userinfo(msg)
     
-    userinfo(msg)
-
-    match msg.data:
-        case "nomzodlar":
-            bot.send_message(msg.from_user.id,"nomzodlarni bittalab kiriting!")
-            data["addnomzodlar"] = str(msg.from_user.id)
-            data["nomzodlar"] = []
-            with open("data.json","w") as f:
-                json.dump(data, f, indent=4, ensure_ascii=False)
-        case "nomzodlartayyor":
-            bot.send_message(msg.from_user.id,"Ovoz yig'ish posti uchun matn kiriting, foydalanish taqiqlanadi (emoji,stiker). \nmatnni etibor bilan yozing!!!")
-            data['addnomzodlar'] = ""
-            data["nomzodlartext"] = str(msg.from_user.id)
-            with open("data.json","w") as f:
-                json.dump(data, f, indent=4, ensure_ascii=False)
-        case "edit_info":
-            bot.send_message(msg.from_user.id,"botdan foydalanish",reply_markup=EditBotBtns())
-        case "sendvotechannel":
-            buttons = types.InlineKeyboardMarkup(row_width=1)
-            for kanal in data["kanallar"]:
-                buttons.add(types.InlineKeyboardButton(text=f"{kanal}", callback_data=f"sendvote{kanal}"))
-            buttons.add(types.InlineKeyboardButton(text="hammasiga yuborish",callback_data="sendvoteallchannel"))
-            bot.send_message(msg.from_user.id,"qaysi kanallarga yuborish kerakligini tanlang",reply_markup=buttons)
-    # ovoz yig'ish postini kanalga yuklash
-        case "sendvoteallchannel":
-            try:
+        match msg.data:
+            case "nomzodlar":
+                bot.send_message(msg.from_user.id,"nomzodlarni bittalab kiriting!")
+                data["addnomzodlar"] = str(msg.from_user.id)
+                data["nomzodlar"] = []
+                with open("data.json","w") as f:
+                    json.dump(data, f, indent=4, ensure_ascii=False)
+            case "nomzodlartayyor":
+                bot.send_message(msg.from_user.id,"Ovoz yig'ish posti uchun matn kiriting, foydalanish taqiqlanadi (emoji,stiker). \nmatnni etibor bilan yozing!!!")
+                data['addnomzodlar'] = ""
+                data["nomzodlartext"] = str(msg.from_user.id)
+                with open("data.json","w") as f:
+                    json.dump(data, f, indent=4, ensure_ascii=False)
+            case "edit_info":
+                bot.send_message(msg.from_user.id,"botdan foydalanish",reply_markup=EditBotBtns())
+            case "sendvotechannel":
+                buttons = types.InlineKeyboardMarkup(row_width=1)
                 for kanal in data["kanallar"]:
+                    buttons.add(types.InlineKeyboardButton(text=f"{kanal}", callback_data=f"sendvote{kanal}"))
+                buttons.add(types.InlineKeyboardButton(text="hammasiga yuborish",callback_data="sendvoteallchannel"))
+                bot.send_message(msg.from_user.id,"qaysi kanallarga yuborish kerakligini tanlang",reply_markup=buttons)
+        # ovoz yig'ish postini kanalga yuklash
+            case "sendvoteallchannel":
+                try:
+                    for kanal in data["kanallar"]:
+                        buttons = types.InlineKeyboardMarkup(row_width=1)
+                        for k in data["nomzodlar"]:
+                        
+                            # oddiy foydalanuvchi start bosganida ovozlarni ko'rsatish
+                            ovozlar_soni = 0
+                            for id, ovoz in data["ovozlar"].items():
+                                if k == ovoz:
+                                    ovozlar_soni += 1
+                            button = types.InlineKeyboardButton(text=f"{k} || ({ovozlar_soni})",
+                                                                callback_data=k)
+                            buttons.add(button)
+                        img = data["rasm"]
+                        bot.send_photo(f"@{kanal}",img , caption=data["nomzodlartext"], reply_markup=buttons)
+                except:
+                    pass
+        for kanal in data['kanallar']:
+            if msg.data == f"sendvote{kanal}":
+                buttons = types.InlineKeyboardMarkup(row_width=1)
+                for k in data["nomzodlar"]:
+                    # oddiy foydalanuvchi start bosganida ovozlarni ko'rsatish
+                    ovozlar_soni = 0
+                    for id, ovoz in data["ovozlar"].items():
+                        if k == ovoz:
+                            
+                            ovozlar_soni += 1
+                    if len(data["ovozlar"].values()) == 0 or ovozlar_soni == 0:
+                        foyiz = 0
+                    else:
+                        foyiz = int(ovozlar_soni / len(data["ovozlar"].values()) * 100)
+                    button = types.InlineKeyboardButton(text=f"{k} || {ovozlar_soni} [{foyiz}%]",
+                                                        callback_data=k)
+                    buttons.add(button)
+                img = data["rasm"]
+                bot.send_photo(f"@{kanal}", img, caption=data["nomzodlartext"], reply_markup=buttons)
+            #ovozni yig'ish 
+            
+            if msg.data in data["nomzodlar"]:
+                if str(msg.from_user.id) not in data["ovozlar"].keys():
+                    bot.answer_callback_query(msg.id,text="ovoz berildi!")
+                    data["ovozlar"][msg.from_user.id] = msg.data
+                    with open("data.json","w") as f:
+                        json.dump(data,f,indent=4,ensure_ascii=False)
+    
                     buttons = types.InlineKeyboardMarkup(row_width=1)
                     for k in data["nomzodlar"]:
-
+                    
                         # oddiy foydalanuvchi start bosganida ovozlarni ko'rsatish
                         ovozlar_soni = 0
                         for id, ovoz in data["ovozlar"].items():
                             if k == ovoz:
                                 ovozlar_soni += 1
-                        button = types.InlineKeyboardButton(text=f"{k} || ({ovozlar_soni})",
-                                                            callback_data=k)
-                        buttons.add(button)
-                    img = data["rasm"]
-                    bot.send_photo(f"@{kanal}",img , caption=data["nomzodlartext"], reply_markup=buttons)
-            except:
-                pass
-    for kanal in data['kanallar']:
-        if msg.data == f"sendvote{kanal}":
-            buttons = types.InlineKeyboardMarkup(row_width=1)
-            for k in data["nomzodlar"]:
-                # oddiy foydalanuvchi start bosganida ovozlarni ko'rsatish
-                ovozlar_soni = 0
-                for id, ovoz in data["ovozlar"].items():
-                    if k == ovoz:
                         
-                        ovozlar_soni += 1
-                if len(data["ovozlar"].values()) == 0 or ovozlar_soni == 0:
-                    foyiz = 0
+                        if len(data["ovozlar"].values()) == 0 or ovozlar_soni == 0:
+                            foyiz = 0
+                        else:
+                            foyiz = int(ovozlar_soni / len(data["ovozlar"].values()) * 100)
+                        button = types.InlineKeyboardButton(text=f"{k} || {ovozlar_soni}  [{foyiz}%]",callback_data=k)
+                        buttons.add(button)
+                    bot.edit_message_reply_markup(
+                        chat_id=msg.message.chat.id,
+                        message_id=msg.message.message_id,
+                        reply_markup=buttons
+                        )
+    
                 else:
-                    foyiz = int(ovozlar_soni / len(data["ovozlar"].values()) * 100)
-                button = types.InlineKeyboardButton(text=f"{k} || {ovozlar_soni} [{foyiz}%]",
-                                                    callback_data=k)
-                buttons.add(button)
-            img = data["rasm"]
-            bot.send_photo(f"@{kanal}", img, caption=data["nomzodlartext"], reply_markup=buttons)
-        #ovozni yig'ish 
-        
-        if msg.data in data["nomzodlar"]:
-            if str(msg.from_user.id) not in data["ovozlar"].keys():
-                bot.answer_callback_query(msg.id,text="ovoz berildi!")
-                data["ovozlar"][msg.from_user.id] = msg.data
-                with open("data.json","w") as f:
-                    json.dump(data,f,indent=4,ensure_ascii=False)
-
-                buttons = types.InlineKeyboardMarkup(row_width=1)
-                for k in data["nomzodlar"]:
-
-                    # oddiy foydalanuvchi start bosganida ovozlarni ko'rsatish
-                    ovozlar_soni = 0
-                    for id, ovoz in data["ovozlar"].items():
-                        if k == ovoz:
-                            ovozlar_soni += 1
-                    
-                    if len(data["ovozlar"].values()) == 0 or ovozlar_soni == 0:
-                        foyiz = 0
-                    else:
-                        foyiz = int(ovozlar_soni / len(data["ovozlar"].values()) * 100)
-                    button = types.InlineKeyboardButton(text=f"{k} || {ovozlar_soni}  [{foyiz}%]",callback_data=k)
-                    buttons.add(button)
-                bot.edit_message_reply_markup(
-                    chat_id=msg.message.chat.id,
-                    message_id=msg.message.message_id,
-                    reply_markup=buttons
-                    )
-
-            else:
-                bot.answer_callback_query(msg.id,text="siz allaqachon ovoz berdingiz!")
-    time.sleep(6)
+                    bot.answer_callback_query(msg.id,text="siz allaqachon ovoz berdingiz!")
+    except Exception as f:
+        print(f"xatolik {f}")
+        time.sleep(6)
 
                 
             
@@ -305,7 +308,9 @@ def send_photo(msg: types.Message):
             
     
 
-
-
-
-bot.polling(timeout=60)
+try:
+    bot.polling()
+except Exception as f:
+    bot.polling()
+    time.sleep(6)
+    print(f"xatolik {f}")
