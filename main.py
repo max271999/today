@@ -1,5 +1,6 @@
 from telebot import TeleBot, types
 import json
+import time
 # from telebot.states import stateGroup, state
 
 BOT_TOKEN = "7896195332:AAFUTnSjgV576bi61zX5XRq93pn-MY0eNNI"
@@ -235,7 +236,8 @@ def query(msg: types.CallbackQuery):
 
             else:
                 bot.answer_callback_query(msg.id,text="siz allaqachon ovoz berdingiz!")
-                
+    time.sleep(6)
+
                 
             
             
