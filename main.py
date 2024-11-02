@@ -154,7 +154,7 @@ def query(msg: types.CallbackQuery):
         case "nomzodlartayyor":
             bot.send_message(msg.from_user.id,"Ovoz yig'ish posti uchun matn kiriting, foydalanish taqiqlanadi (emoji,stiker). \nmatnni etibor bilan yozing!!!")
             data['addnomzodlar'] = ""
-            data["nomzodlartext"] = "edit"
+            data["nomzodlartext"] = str(msg.from_user.id)
             with open("data.json","w") as f:
                 json.dump(data, f, indent=4, ensure_ascii=False)
         case "edit_info":
@@ -268,6 +268,7 @@ def send_admin(msg: types.Message):
             except:
                 bot.send_message(msg.from_user.id,"xato malumot yuborildi. ortiqcha belgilardan foydalanman. \n\ndasturchiga xabar berildi!!")
                 bot.send_message(data["developer"],f"nomzodlarni qo'shishda xatolik bo'ldi ({msg.text})")
+                data["addnomzodlar"]
         elif str(msg.from_user.id) == data["nomzodlartext"]:
             try:
                 data["nomzodlartext"] = msg.message_id
@@ -297,52 +298,20 @@ def send_photo(msg: types.Message):
             bot.send_photo(msg.from_user.id,file_id,caption=data["nomzodlartext"], reply_markup=buttons)
             
             
-#Omonqoʻtan
-#
-#Qorabuloq
-#
-#Qoratepa
-#
-#Terak
-#
-#Beshyogʻoch
-#
-#Moʻminobod
-#
-#Chep
-#
-#Tinchlik
-#
-#Beshkapa
-#
-#Gulobod
-#
-#Kamongaron
-#
-#Oqmachit
-#
-#Ispanza 
-#
-#Goʻslik
-#
-#Torinjak
-#
-#Kamardon
-#
-#Navbogʻ
-#
-#Doʻstlik 
-#
-#Navroʻz
-#
-#Soʻfiyon
-#
-#Kalangar
+            
             
             
     
 
-
+#        Mangitobod Qurbonov Faxriddin
+#        Xalqobod Quvvatov Zarifboy
+#        Dehqonobod Yuldoshev Ravshan
+#        Bunyodkor Abdullayev Sadullo
+#        Sariqtepa Mamatqulov Komil
+#        Gulobod Ahmedov Jasur
+#        Quyi Tegana Xalilov Ilyos
+#        Jozmon Yuldoshev Lutfullo
+#        Kutarma Qosimov Rabbim
 
 
 bot.polling(timeout=60)
