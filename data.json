@@ -3,16 +3,181 @@
     "kanallar": [
         "urguttoday"
     ],
-    "nomzodlar": [
-        "ali",
-        "vali"
-    ],
+    "nomzodlar": [],
     "ega": "1613939862",
     "adminlar": {
         "1803534444": "Abduaziz271",
         "1613939862": "Itcloud_ceo"
     },
-    "ovozlar": {},
+    "ovozlar": {
+        "1803534444": "Omonqoʻtan",
+        "7406886930": "Navbogʻ",
+        "1613939862": "Kalangar",
+        "1107138795": "Goʻslik",
+        "6538541105": "Kamardon",
+        "6212912317": "Gulobod",
+        "5169152136": "Goʻslik",
+        "819686088": "Omonqoʻtan",
+        "5779914891": "Ispanza",
+        "228422680": "Ispanza",
+        "6207041109": "Kalangar",
+        "5779509082": "Torinjak",
+        "1455917746": "Navroʻz",
+        "393453311": "Kamardon",
+        "902761053": "Ispanza",
+        "7347704869": "Navbogʻ",
+        "1136438191": "Beshkapa",
+        "5735185106": "Goʻslik",
+        "6036598333": "Omonqoʻtan",
+        "6449271796": "Soʻfiyon",
+        "1412501744": "Kalangar",
+        "983377381": "Kamardon",
+        "7054002986": "Torinjak",
+        "6369937805": "Doʻstlik",
+        "412528368": "Kamongaron",
+        "5204597141": "Doʻstlik",
+        "6706692097": "Kamongaron",
+        "383202241": "Kamardon",
+        "598137410": "Navbogʻ",
+        "7426149433": "Chep",
+        "5153066564": "Torinjak",
+        "679163017": "Navroʻz",
+        "7173483410": "Torinjak",
+        "6765583919": "Goʻslik",
+        "1576137013": "Kamardon",
+        "561552602": "Kamardon",
+        "1065061163": "Ispanza",
+        "7017251907": "Kamardon",
+        "13017471": "Torinjak",
+        "500972620": "Ispanza",
+        "7720292762": "Kamardon",
+        "7022778298": "Goʻslik",
+        "908151268": "Kamardon",
+        "7215094147": "Kamardon",
+        "6745727683": "Beshkapa",
+        "816310320": "Torinjak",
+        "5538280442": "Kalangar",
+        "1854265904": "Goʻslik",
+        "1479991901": "Doʻstlik",
+        "257261521": "Navbogʻ",
+        "7346291309": "Kamongaron",
+        "2186429": "Ispanza",
+        "5056760310": "Beshkapa",
+        "1037485184": "Kalangar",
+        "1132763142": "Omonqoʻtan",
+        "938837749": "Kamongaron",
+        "5772016389": "Kamardon",
+        "1636478751": "Doʻstlik",
+        "88695674": "Kalangar",
+        "880957017": "Kalangar",
+        "6845179377": "Beshyogʻoch",
+        "548736995": "Kamardon",
+        "335254139": "Navbogʻ",
+        "7449588015": "Goʻslik",
+        "5694229474": "Kamardon",
+        "1926222110": "Soʻfiyon",
+        "7379721506": "Kamongaron",
+        "6583074002": "Beshkapa",
+        "1293134702": "Torinjak",
+        "6244314547": "Ispanza",
+        "618844643": "Torinjak",
+        "1494376062": "Moʻminobod",
+        "6574057765": "Kamardon",
+        "6631184254": "Kamardon",
+        "7196573037": "Moʻminobod",
+        "1699301352": "Beshyogʻoch",
+        "5029310501": "Kamardon",
+        "6163371277": "Goʻslik",
+        "5980257746": "Ispanza",
+        "1602404391": "Kamardon",
+        "7333149680": "Chep",
+        "7052609746": "Navbogʻ",
+        "635890879": "Chep",
+        "312387354": "Kamardon",
+        "5069807839": "Kamardon",
+        "7312745678": "Chep",
+        "6950637195": "Chep",
+        "6541818544": "Chep",
+        "6896298773": "Chep",
+        "783594709": "Beshkapa",
+        "6873215849": "Navbogʻ",
+        "6713768738": "Chep",
+        "6372653755": "Chep",
+        "6940905473": "Beshkapa",
+        "5964261896": "Chep",
+        "702276022": "Goʻslik",
+        "5411725398": "Beshyogʻoch",
+        "580775593": "Chep",
+        "6806251624": "Navbogʻ",
+        "1194133702": "Navroʻz",
+        "6489931226": "Chep",
+        "604397673": "Ispanza",
+        "7930181452": "Chep",
+        "6623231701": "Kamardon",
+        "227749731": "Kamardon",
+        "7410394914": "Beshkapa",
+        "7140532930": "Goʻslik",
+        "7146092741": "Doʻstlik",
+        "1540719859": "Torinjak",
+        "660536694": "Ispanza",
+        "6347271803": "Moʻminobod",
+        "7468900894": "Goʻslik",
+        "6017054529": "Beshkapa",
+        "1280579590": "Soʻfiyon",
+        "5626901464": "Doʻstlik",
+        "6745788679": "Goʻslik",
+        "1202963840": "Ispanza",
+        "5148793848": "Ispanza",
+        "145722691": "Navbogʻ",
+        "681419890": "Kalangar",
+        "7120415398": "Kalangar",
+        "788545549": "Kamardon",
+        "1180859020": "Kamardon",
+        "6876689635": "Beshkapa",
+        "705644183": "Soʻfiyon",
+        "342528542": "Moʻminobod",
+        "1062795296": "Kamardon",
+        "6624216036": "Torinjak",
+        "544902487": "Torinjak",
+        "290141721": "Navbogʻ",
+        "1968158888": "Gulobod",
+        "6191311540": "Torinjak",
+        "5688158896": "Ispanza",
+        "6552428857": "Moʻminobod",
+        "1117935865": "Qorabuloq",
+        "711052685": "Torinjak",
+        "5879212997": "Chep",
+        "6957523202": "Kamongaron",
+        "1971462534": "Goʻslik",
+        "684894554": "Terak",
+        "5995191312": "Beshkapa",
+        "8148907760": "Omonqoʻtan",
+        "1770893359": "Torinjak",
+        "6665281266": "Kamardon",
+        "5931970818": "Omonqoʻtan",
+        "1751928883": "Chep",
+        "6612642768": "Kamardon",
+        "6551353210": "Soʻfiyon",
+        "1973635313": "Omonqoʻtan",
+        "6171533225": "Chep",
+        "6850171939": "Soʻfiyon",
+        "1164262727": "Torinjak",
+        "7075314896": "Chep",
+        "7019090591": "Kamardon",
+        "674505342": "Kalangar",
+        "1416888040": "Qoratepa",
+        "5252947075": "Beshkapa",
+        "5506499653": "Torinjak",
+        "6630915086": "Kamardon",
+        "576530329": "Kalangar",
+        "330190649": "Beshkapa",
+        "217067552": "Moʻminobod",
+        "5078400823": "Moʻminobod",
+        "6588997603": "Ispanza",
+        "6131163061": "Omonqoʻtan",
+        "7500233151": "Omonqoʻtan",
+        "1738268899": "Moʻminobod"
+    },
     "users": {
         "1803534444": {
             "id": 1803534444,
@@ -58,9 +223,509 @@
             "id": 1613939862,
             "username": "Itcloud_ceo",
             "premium": null
+        },
+        "7406886930": {
+            "id": 7406886930,
+            "username": "Samandar_21_77",
+            "premium": null
+        },
+        "6212912317": {
+            "id": 6212912317,
+            "username": null,
+            "premium": null
+        },
+        "5169152136": {
+            "id": 5169152136,
+            "username": "your_rakhmonovv",
+            "premium": true
+        },
+        "5779914891": {
+            "id": 5779914891,
+            "username": null,
+            "premium": null
+        },
+        "819686088": {
+            "id": 819686088,
+            "username": null,
+            "premium": null
+        },
+        "393453311": {
+            "id": 393453311,
+            "username": null,
+            "premium": null
+        },
+        "902761053": {
+            "id": 902761053,
+            "username": "SHAMSIDDIN5699",
+            "premium": null
+        },
+        "5735185106": {
+            "id": 5735185106,
+            "username": null,
+            "premium": null
+        },
+        "1136438191": {
+            "id": 1136438191,
+            "username": null,
+            "premium": null
+        },
+        "983377381": {
+            "id": 983377381,
+            "username": "ReaL1Narcos",
+            "premium": null
+        },
+        "7054002986": {
+            "id": 7054002986,
+            "username": "AmirjonimN2024",
+            "premium": null
+        },
+        "6706692097": {
+            "id": 6706692097,
+            "username": "elbek03046",
+            "premium": true
+        },
+        "383202241": {
+            "id": 383202241,
+            "username": null,
+            "premium": null
+        },
+        "7426149433": {
+            "id": 7426149433,
+            "username": "Paruiop",
+            "premium": null
+        },
+        "5153066564": {
+            "id": 5153066564,
+            "username": "Dkni_030",
+            "premium": null
+        },
+        "6765583919": {
+            "id": 6765583919,
+            "username": "akademic_tukhtayev",
+            "premium": null
+        },
+        "1576137013": {
+            "id": 1576137013,
+            "username": "Shoxa_1100",
+            "premium": null
+        },
+        "1065061163": {
+            "id": 1065061163,
+            "username": null,
+            "premium": null
+        },
+        "500972620": {
+            "id": 500972620,
+            "username": null,
+            "premium": null
+        },
+        "7022778298": {
+            "id": 7022778298,
+            "username": "Ayuni1326",
+            "premium": null
+        },
+        "7720292762": {
+            "id": 7720292762,
+            "username": null,
+            "premium": null
+        },
+        "6745727683": {
+            "id": 6745727683,
+            "username": null,
+            "premium": null
+        },
+        "5538280442": {
+            "id": 5538280442,
+            "username": "ahmadjon_477",
+            "premium": null
+        },
+        "2186429": {
+            "id": 2186429,
+            "username": "Sherali022",
+            "premium": null
+        },
+        "5056760310": {
+            "id": 5056760310,
+            "username": null,
+            "premium": null
+        },
+        "1037485184": {
+            "id": 1037485184,
+            "username": null,
+            "premium": null
+        },
+        "1132763142": {
+            "id": 1132763142,
+            "username": "javo1r666",
+            "premium": null
+        },
+        "1636478751": {
+            "id": 1636478751,
+            "username": null,
+            "premium": null
+        },
+        "880957017": {
+            "id": 880957017,
+            "username": "s1987m2015",
+            "premium": null
+        },
+        "6845179377": {
+            "id": 6845179377,
+            "username": "Muslimbek_096",
+            "premium": null
+        },
+        "5694229474": {
+            "id": 5694229474,
+            "username": null,
+            "premium": null
+        },
+        "6583074002": {
+            "id": 6583074002,
+            "username": null,
+            "premium": null
+        },
+        "6244314547": {
+            "id": 6244314547,
+            "username": null,
+            "premium": null
+        },
+        "6631184254": {
+            "id": 6631184254,
+            "username": null,
+            "premium": null
+        },
+        "1699301352": {
+            "id": 1699301352,
+            "username": null,
+            "premium": null
+        },
+        "1602404391": {
+            "id": 1602404391,
+            "username": null,
+            "premium": null
+        },
+        "312387354": {
+            "id": 312387354,
+            "username": null,
+            "premium": null
+        },
+        "635890879": {
+            "id": 635890879,
+            "username": null,
+            "premium": null
+        },
+        "7333149680": {
+            "id": 7333149680,
+            "username": null,
+            "premium": null
+        },
+        "6950637195": {
+            "id": 6950637195,
+            "username": null,
+            "premium": null
+        },
+        "6541818544": {
+            "id": 6541818544,
+            "username": null,
+            "premium": null
+        },
+        "6896298773": {
+            "id": 6896298773,
+            "username": null,
+            "premium": null
+        },
+        "6372653755": {
+            "id": 6372653755,
+            "username": null,
+            "premium": null
+        },
+        "6940905473": {
+            "id": 6940905473,
+            "username": null,
+            "premium": null
+        },
+        "5964261896": {
+            "id": 5964261896,
+            "username": "islamiyao8",
+            "premium": null
+        },
+        "6806251624": {
+            "id": 6806251624,
+            "username": null,
+            "premium": null
+        },
+        "5411725398": {
+            "id": 5411725398,
+            "username": null,
+            "premium": null
+        },
+        "6489931226": {
+            "id": 6489931226,
+            "username": null,
+            "premium": null
+        },
+        "604397673": {
+            "id": 604397673,
+            "username": "esansaroy",
+            "premium": null
+        },
+        "6623231701": {
+            "id": 6623231701,
+            "username": "MurodManzura",
+            "premium": null
+        },
+        "7146092741": {
+            "id": 7146092741,
+            "username": "UmaraliMaxkamtoshev",
+            "premium": null
+        },
+        "1540719859": {
+            "id": 1540719859,
+            "username": null,
+            "premium": null
+        },
+        "6347271803": {
+            "id": 6347271803,
+            "username": null,
+            "premium": null
+        },
+        "7468900894": {
+            "id": 7468900894,
+            "username": "Nurmuhammad_n_d",
+            "premium": null
+        },
+        "660536694": {
+            "id": 660536694,
+            "username": "siroj_B",
+            "premium": null
+        },
+        "1280579590": {
+            "id": 1280579590,
+            "username": null,
+            "premium": null
+        },
+        "1202963840": {
+            "id": 1202963840,
+            "username": null,
+            "premium": null
+        },
+        "1180859020": {
+            "id": 1180859020,
+            "username": null,
+            "premium": null
+        },
+        "6876689635": {
+            "id": 6876689635,
+            "username": "mayvache05",
+            "premium": null
+        },
+        "6624216036": {
+            "id": 6624216036,
+            "username": null,
+            "premium": null
+        },
+        "6191311540": {
+            "id": 6191311540,
+            "username": "yildiz_198905",
+            "premium": null
+        },
+        "6552428857": {
+            "id": 6552428857,
+            "username": null,
+            "premium": null
+        },
+        "711052685": {
+            "id": 711052685,
+            "username": null,
+            "premium": null
+        },
+        "5879212997": {
+            "id": 5879212997,
+            "username": "MuxrTurk",
+            "premium": null
+        },
+        "6957523202": {
+            "id": 6957523202,
+            "username": null,
+            "premium": null
+        },
+        "6665281266": {
+            "id": 6665281266,
+            "username": null,
+            "premium": null
+        },
+        "5931970818": {
+            "id": 5931970818,
+            "username": null,
+            "premium": null
+        },
+        "6551353210": {
+            "id": 6551353210,
+            "username": null,
+            "premium": null
+        },
+        "1973635313": {
+            "id": 1973635313,
+            "username": null,
+            "premium": null
+        },
+        "6171533225": {
+            "id": 6171533225,
+            "username": null,
+            "premium": null
+        },
+        "1164262727": {
+            "id": 1164262727,
+            "username": "mamatqulov1997",
+            "premium": null
+        },
+        "7075314896": {
+            "id": 7075314896,
+            "username": "Samandar_210608",
+            "premium": null
+        },
+        "7019090591": {
+            "id": 7019090591,
+            "username": null,
+            "premium": null
+        },
+        "5252947075": {
+            "id": 5252947075,
+            "username": null,
+            "premium": null
+        },
+        "5506499653": {
+            "id": 5506499653,
+            "username": null,
+            "premium": null
+        },
+        "6630915086": {
+            "id": 6630915086,
+            "username": null,
+            "premium": null
+        },
+        "576530329": {
+            "id": 576530329,
+            "username": null,
+            "premium": null
+        },
+        "217067552": {
+            "id": 217067552,
+            "username": null,
+            "premium": null
+        },
+        "5078400823": {
+            "id": 5078400823,
+            "username": "C0_222",
+            "premium": null
+        },
+        "6131163061": {
+            "id": 6131163061,
+            "username": null,
+            "premium": true
+        },
+        "7500233151": {
+            "id": 7500233151,
+            "username": null,
+            "premium": null
+        },
+        "261535965": {
+            "id": 261535965,
+            "username": "Farkhod11",
+            "premium": null
+        },
+        "6081952878": {
+            "id": 6081952878,
+            "username": null,
+            "premium": null
+        },
+        "1383761031": {
+            "id": 1383761031,
+            "username": "ERGASHOV_QAHRAMON",
+            "premium": null
+        },
+        "2106048603": {
+            "id": 2106048603,
+            "username": "FF0400",
+            "premium": null
+        },
+        "1243494255": {
+            "id": 1243494255,
+            "username": null,
+            "premium": null
+        },
+        "587244972": {
+            "id": 587244972,
+            "username": null,
+            "premium": null
+        },
+        "1757167740": {
+            "id": 1757167740,
+            "username": "Najmiyev_Ergash",
+            "premium": null
+        },
+        "6647643648": {
+            "id": 6647643648,
+            "username": null,
+            "premium": null
+        },
+        "1204720486": {
+            "id": 1204720486,
+            "username": "azizbey2230",
+            "premium": null
+        },
+        "1333034273": {
+            "id": 1333034273,
+            "username": null,
+            "premium": null
+        },
+        "6993646314": {
+            "id": 6993646314,
+            "username": null,
+            "premium": null
+        },
+        "6290207712": {
+            "id": 6290207712,
+            "username": null,
+            "premium": null
+        },
+        "6934563520": {
+            "id": 6934563520,
+            "username": null,
+            "premium": null
+        },
+        "757125986": {
+            "id": 757125986,
+            "username": null,
+            "premium": null
+        },
+        "545228560": {
+            "id": 545228560,
+            "username": "Saidjonkhazratov",
+            "premium": null
+        },
+        "7023169073": {
+            "id": 7023169073,
+            "username": null,
+            "premium": null
+        },
+        "495094140": {
+            "id": 495094140,
+            "username": null,
+            "premium": null
+        },
+        "995554413": {
+            "id": 995554413,
+            "username": null,
+            "premium": null
+        },
+        "5856206428": {
+            "id": 5856206428,
+            "username": null,
+            "premium": null
         }
     },
-    "addnomzodlar": "",
+    "addnomzodlar": "1613939862",
     "rasm": "AgACAgIAAxkBAAMWZyZsm0inpko9tcRWiuVw-ZNp3Q4AAmHnMRs-pDBJq8N31pqDd-gBAAMCAAN4AAM2BA",
-    "nomzodlartext": 20
+    "nomzodlartext": 209
 }
